@@ -1,0 +1,630 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --navigation-barColor: #2B2B2B;
+    /* navigation bar's background color*/
+    --search-btnColor: #09757A;
+    /* search bar background color*/
+    --regular-stars: #01B67B;
+    /* background color for  regular stars*/
+    --column-bgcolor: #F5F5F5;
+
+}
+
+
+
+/* Here I start to code CSS for Navigation bar */
+
+#navigationBar {
+    display: flex;
+    background-color: var(--navigation-barColor);
+    color: white;
+    height: 50px;
+    align-items: center;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+
+}
+
+#left_navBar {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    position: relative;
+    left: 20px;
+    font-weight: 600;
+
+}
+
+.GoDaddy_logo {
+    height: 28px;
+    text-decoration: none;
+}
+
+#subscript {
+    font-size: 7px;
+    position: relative;
+    left: -10px;
+    top: 8px;
+
+}
+
+#left_navBar>section:last-child {
+    border-right: 1px solid #444444;
+    padding: 0px 10px;
+    /* height: 40px; */
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+#right_navBar {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+
+}
+
+#right_navBar>section:first-child {
+    font-weight: 600;
+}
+
+.drop {
+    height: 10px;
+}
+
+.left_navItems:hover,
+.right_navItems:hover {
+    background-color: #5E5E5E;
+    border: 1px solid #5E5E5E;
+    border-radius: 5px;
+    padding: 1px 4px;
+    cursor: pointer;
+
+}
+
+#left_navBar>:first-child:hover,
+#right_navBar>:last-child:hover {
+
+    background-color: transparent;
+    border: none;
+    border-radius: none;
+    padding: none;
+}
+
+.shopCart::after {
+    content: "checkout now";
+    position: absolute;
+    float: right;
+    right: 5px;
+    top: 40px;
+    background-color: #fff;
+    color: #2B2B2B;
+    border: 1px solid black;
+    display: none;
+    padding: 1px 5px;
+    font-size: 13px;
+
+}
+
+.shopCart:hover::after {
+    display: block;
+
+}
+
+/* Here I ended the CSS Style for navigation bar. Then started to style txhe search bar */
+
+#searchBar {
+    position: relative;
+    top: 13px;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+#search {
+    position: relative;
+    left: 40px;
+    width: 85%;
+}
+
+#search>form>input:first-child {
+    padding: 20px 40px;
+    background-color: #E8EAEB;
+    width: 70%;
+    font-weight: 500;
+    font-size: 20px;
+    border-color: grey;
+}
+
+#submitbutton {
+    background-color: #09757A;
+    position: relative;
+    padding: 22px 45px;
+    color: white;
+    left: -5px;
+    border-color: gray;
+    font-size: 18px;
+    border-left: none;
+
+}
+
+#submitbutton:hover {
+    background-color: #073C37;
+    transition: 2s;
+}
+
+#pro {
+    position: relative;
+    left: 50px;
+    top: 15px;
+    text-decoration: none;
+}
+
+#pro img {
+    height: 30px;
+    text-decoration: none;
+}
+
+#rupees {
+    position: relative;
+    color: grey;
+    top: -10px;
+    left: 5px;
+    font-size: x-small;
+    text-decoration: none;
+}
+
+/* Here it self search bar CSS style is over. */
+
+#domainHosting {
+    display: flex;
+    position: relative;
+    top: 30px;
+    padding: 0px 10px 0px 40px;
+    gap: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#left_host {
+    width: 70%;
+    background-image: url("https://img1.wsimg.com/cdnassets/transform/c775c7a1-2eca-4e31-b44f-8d029a83872e/in-mrq-hp-landscape");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    color: white;
+    line-height: 50px;
+    padding: 10px;
+    height: 455px;
+    background-position: center;
+}
+
+#left_host>h1 {
+    font-size: 40px;
+    font-weight: 850;
+}
+
+#left_host>p:last-child {
+    font-size: 14px;
+}
+
+#left_host p,
+h1,
+button {
+    position: relative;
+    left: 18px;
+}
+
+#left_host button {
+    padding: 10px 40px;
+    font-size: large
+}
+
+.rtarrow {
+    display: none;
+}
+
+#right_host {
+    border: 1px;
+    background-color: #D8EFEF;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    height: 300px;
+    border-radius: 15px;
+    color: #111;
+    width: 300px;
+    height: 475px;
+    line-height: 50px;
+
+}
+
+#unpara {
+    line-height: 35px;
+}
+
+#right_host>:first-child {
+    margin-top: 20px;
+}
+
+#right_host button {
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+
+#domainHosting button:hover>i {
+    display: inline;
+}
+
+#right_host>h1 {
+    font-size: 31px;
+    word-spacing: 7px;
+    font-weight: 850;
+}
+
+
+#offer70 {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    background-color: #F4F8FC;
+    padding: 30px;
+    font-size: large;
+}
+
+#offer70 button {
+    color: white;
+    background-color: black;
+    padding: 6px;
+    font-size: large;
+}
+
+/* From here after I am going to style the table */
+
+
+.tabulation {
+    position: relative;
+    top: 100px;
+    height: min-content;
+
+}
+
+.onHover {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.onHover:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.onHover:hover i {
+    display: inline;
+}
+
+/* the below code is to style the slides */
+.multi-slides {
+    background-color: #E8EAEB;
+    position: relative;
+    top: 150px;
+    min-height: 750px;
+    /* animation-name: moving_anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+
+}
+
+.slides {
+    display: flex;
+    gap: 50px;
+    overflow-x: hidden;
+
+}
+
+.images-inside-slider {
+    position: relative;
+    width: 250px;
+    height: 400px;
+
+}
+
+
+
+.Browse:hover i {
+    display: inline;
+}
+
+.Trusted {
+    /* background-color: #D8EFEF; */
+    background-color: white;
+    position: relative;
+    top: 170px;
+}
+
+.Trusted h1 {
+    font-size: 44px;
+    /* font-weight: 850; */
+}
+
+.trusted-col {
+    background-color: #F5F7F8;
+    padding: 25px;
+    min-height: 300px;
+    font-size: small;
+
+
+}
+
+.rgStar {
+    color: var(--regular-stars);
+}
+
+.showReview {
+    font-size: large;
+    width: fit-content;
+    border-radius: 50%;
+    padding: 15px;
+
+
+}
+
+.showReview>span::after {
+    content: "<";
+}
+
+
+/* zic zak style starts */
+
+.zic-zak {
+    position: relative;
+    top: 150px;
+}
+
+.zic-zak li {
+    font-size: 18px;
+    font-weight: 565;
+}
+
+.zic-zak a {
+    border: 2px solid black;
+    font-weight: 500;
+}
+
+.zic-zak span {
+    position: relative;
+    top: 25px;
+    left: 10px;
+    font-size: larger;
+    font-weight: 565;
+}
+
+.zic-zak img {
+    height: 600px;
+}
+
+/* zic zak is over. */
+
+
+.why_godaddy {
+    position: relative;
+    top: 300px;
+}
+
+
+.setBgImage>div:first-child {
+    background-image: url("https://img1.wsimg.com/cdn/Image/All/All/1/en-US/d70f061e-baf3-43c2-a0ef-6938fe9edd27/img-hp-rtb-largest-registrar.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    color: white;
+}
+
+.setBgImage>div:nth-child(2) {
+    background-image: url("https://img1.wsimg.com/cdn/Image/All/All/1/en-US/a1fc61df-1e28-4441-b54f-ae95ea6d7a39/img-hp-rtb-security.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    color: white;
+}
+
+.setBgImage>div:last-child {
+    background-image: url("https://img1.wsimg.com/cdn/Image/All/FOS-Intl/1/en-US/4d9e72c1-3a5b-4663-9600-be17fafcd7a9/globe-green-1.svg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 15px;
+    background-color: var(--column-bgcolor);
+    background-size: 40px;
+    color: black;
+
+
+}
+
+.setBgImage p {
+    padding: 15px;
+}
+
+.setBgImage>div:last-child p {
+    position: relative;
+    top: 260px;
+}
+
+
+.row_count3>div:first-child {
+    background-color: var(--column-bgcolor);
+    background-image: url("https://img1.wsimg.com/cdn/Image/All/All/1/All/f7f2dfd7-0240-4819-bab7-ed0b2f0cae13/icon-phone-green.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 15px;
+    background-size: 60px;
+    height: 450px;
+
+}
+
+.row_count3>div:last-child {
+    background-image: url("https://img1.wsimg.com/cdn/Image/All/All/2/All/c2a64049-b2eb-4adf-bb45-c5a5ff89348f/img-hp-rtb-tools-for-every-first-landscape.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 15px;
+    height: 450px;
+}
+
+
+
+
+.row_count3>div p {
+    position: relative;
+    top: 100px;
+    left: 20px;
+}
+
+.row_count4 {
+    position: relative;
+    top: 300px;
+    padding: 50px;
+    background-color: #D8EFEF;
+    font-weight: 565;
+    line-height: 45px;
+}
+
+
+.row_count4 input {
+    padding: 10px 20px;
+    width: 600px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.row_count4 button {
+    font-size: larger;
+    position: relative;
+    left: -5px;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+}
+
+.row_count4 input:hover {
+    border-color: 1px solid skyblue;
+}
+
+.row_count4 button:hover {
+    background-color: var(--search-btnColor);
+}
+
+
+.row_count5 {
+    /* background-image: url("https://img1.wsimg.com/cdn/Image/All/All/1/All/20e570d2-d3fe-41e6-a73e-963a4403d079/mrq-Guide-IN-PK-Suraiya-mobile.jpg"); */
+    background-image: url("https://img1.wsimg.com/cdn/Image/All/All/2/All/8b9985c6-8a6a-438c-8962-68fdb4e312ac/mrq-Guide-IN-PK-Suraiya-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 400px;
+    height: 400px;
+}
+
+
+@media only screen and (max-width:767.98px) {
+    .row_count5 {
+        background-image: url("https://img1.wsimg.com/cdn/Image/All/All/1/All/20e570d2-d3fe-41e6-a73e-963a4403d079/mrq-Guide-IN-PK-Suraiya-mobile.jpg") !important;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+
+    }
+}
+
+.newRow {
+    position: relative;
+    top: 270px;
+    color: red;
+}
+
+
+.millions {
+    position: relative;
+    top: 450px;
+
+}
+
+.faq {
+    position: relative;
+    top: 450px;
+    padding: 120px;
+    text-align: center;
+}
+
+.accordion-button:focus {
+    color: black !important;
+}
+
+
+.accordion-body {
+    text-align: start;
+    font-weight: 565;
+    word-spacing: 10px;
+}
+
+.almost-end {
+    position: relative;
+    top: 400px;
+
+}
+
+
+.need-help {
+    position: relative;
+    top: 400px;
+    background-color: #F5F7F8;
+    padding: 20px;
+}
+
+.nav-footer-bar {
+    position: relative;
+    top: 400px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    line-height: 35px;
+}
+
+.unorderList a {
+    text-decoration: none;
+    color: white;
+}
+
+.unorderList a:hover {
+    text-decoration: underline;
+    background-color: #01B67B;
+
+}
+
+.footer-godaddy {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 10px;
+}
